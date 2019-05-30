@@ -4,14 +4,6 @@ Task: Implement a doubly-linked list class template List and its associated iter
 
 Requirements:
 
-A header file List.h is provided, which contains the interfaces of the doubly-linked list class template List. In particular, it contains a nested Node structure, and two nested iterators class (iterator and const_iterator). You cannot change anything in the List.h file.
-
-List.h
-A driver program test_list.cpp has been included. It is an example test program that will run some tests on your implementation of the doubly-linked list class template for different data types (it tests List<int> and List<string>. Don't make any changes to this driver program. However, your class will be tested with more than just this sample driver. It is recommended that you write other driver programs of your own, for more thorough testing.
-
-test_list.cpp
-You need to implement the member functions of the doubly-linked list class template List in a file named List.hpp. Note that List.hpp has been #included in the header file List.h (towards the end of the file). As we have discussed in class, you should not try to compile List.hpp (or List.h) by themselves. These comprise a header that will be #included into other programs you might write.
-
 You need to implement all the member functions of List<T>, List<T>::iterator, and List<T>::const_iterator, and non-class overloaded functions operator==(), operator!=(), and operator<<() included in List.h. The design of the List container follows the one presented in the textbook. It has three member variables, theSize, head, and tail. theSize records the number of elements in the list. The head and tail pointers point to the sentinel nodes. They represent the beginning and end markers. They do not store any real elements in the list. It is OK for you to use the code provided in the textbook. Your implementation will contain more features than those in the textbook's implementation. We describe the requirements of each function in the following (this specifications may not write the function signatures in detail, please refer to the List.h file for the detailed function declaration).
 
             Member functions of nested const_iterator class:
