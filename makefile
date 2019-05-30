@@ -1,7 +1,8 @@
-all: proj2.x
+all: main.x
 
-proj2.x: test_list.cpp List.hpp
-	g++ test_list.cpp -o proj2.x -std=c++11
+main.x: test_list.cpp List.hpp
+	g++ test_list.cpp -o main.x -std=c++11
  
 clean:
-	rm -f proj2.x
+	rm *.x
+	rm *.o
